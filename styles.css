@@ -16,7 +16,7 @@ body {
 
 .nome {
   color: #ff3cab;
-  font-size: 150px;
+  font-size: 120px;
   position: absolute;
   bottom: 450px;
   text-align: center;
@@ -89,12 +89,12 @@ h1 {
 
 .person.foto {
     position: absolute;
-    width: 220px;
+    width: 250px;
     height: 300px;
     object-fit: cover;
     object-position: center;
     border-bottom: none;
-    bottom: 108px;
+    bottom: 128px;
     left: 0;
     right: 0;
     margin: auto;
@@ -123,7 +123,7 @@ h1 {
   padding: 24px;
   border-radius: 16px;
   background: #160D18;
-  color: #222;
+  color: #c0b6b6;
   text-align: center;
 }
 
