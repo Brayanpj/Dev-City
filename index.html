@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="nome">Lucia</p>
+    <img class="person" src="assets/imagens/lucia.png" /> 
+
+    <div class="textos">
+      <p class="select">Selecione o seu personagem</p>
+      <br>
+      <h1>
+        Não é só <br />
+        um jogo
+      </h1>
+      <p class="apoio">
+        Escolha uma lenda de Dev City. ou escolha uma selfie e vire uma
+      </p>
+    </div> 
+
+    <div class="menu">
+      <button>
+        <img onclick="escolhaPersonagem('Lucia', 'assets/imagens/lucia.png', '#ff3cac')" class="avatar" src="assets/imagens/lucia.png" />
+      </button>
+
+      <button>
+        <img onclick = "escolhaPersonagem ('jason','assets/imagens/jason.png', '#00b2c9')" class="avatar" src="assets/imagens/jason.png"/>
+      </button>
+
+      <button>
+        <img onclick="escolhaPersonagem('cj', 'assets/imagens/cj.png', '#7ed37e')" class="avatar" src="assets/imagens/cj.png" />
+      </button>
+
+     <button onclick="abrirCamera()" class="voce">📸</button>
+      
+</button>
+    </div>  
+    <div id="cameraModal" class="camera-modal" hidden>
+  <div class="camera-conteudo">
+    <h2>Tire sua selfie</h2> 
+    <input id="campoNome" type="text" placeholder="Digite seu nome" maxlength="15">
+
+    <video id="videoCamera" autoplay playsinline></video>
+
+    <canvas id="canvasFoto" hidden></canvas>
+
+    <p id="erroCamera"></p>
+
+    <div class="camera-acoes">
+      <button onclick="tirarFoto()">Tirar foto</button>
+      <button onclick="fecharCamera()">Cancelar</button>
+    </div>
+  </div>
+</div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
